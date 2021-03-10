@@ -1,9 +1,7 @@
 {
     "name": "isendu/connector-module",
     "description": "Isendu Connector Module for Magento 2",
-    "keywords": ["isendu","connector","shipping","magento 2"],
-    "homepage": "https://isendu.com/",
-    "license": "MIT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Sebastian Frassia ",
@@ -12,23 +10,19 @@
             "role": "Full Stack Developer"
         }
     ],
-    "type": "magento2-module",
-    "version": "1.0.0",
+    "repositories":
+    {
+        "url": "github.com/csefrassia/isendu.git",
+        "type": "git"
+    },
+    "minimum-stability": "1.0.0",
+    "require": {},
     "autoload": {
-        "files": [
-            "registration.php"
-        ],
         "psr-4": {
             "Isendu\\ConnectorModule\\": ""
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://repo.magento.com/"
-        }
-    ],
-    "require": {
-        "php": ">=7.4.0"
+        },
+        "files": [
+            "registration.php"
+        ]
     }
 }
