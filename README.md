@@ -2,46 +2,24 @@
 
 This module allows to connect the Magento orders with Isendu to manage your couriers.
 
-### Compatibility ###
+##Support: 
+version - 2.3.x, 2.4.x
 
-* 2.3.x
-* 2.4.x
+##How to install Extension
 
-### Install from zip file [*](https://bitbucket.org/) ###
+1. Download the archive file.
+2. Unzip the file
+3. Create a folder [Magento_Root]/app/code/Isendu/ConnectorModule
+4. Drop/move the unzipped files to directory '[Magento_Root]/app/code/Isendu/ConnectorModule'
 
-* Link to download the module: [IsenduConnectorModule](https://bitbucket.org/)
+#Enable Extension:
+- php bin/magento module:enable Isendu_ConnectorModule
+- php bin/magento setup:upgrade
+- php bin/magento setup:di:compile
+- php bin/magento cache:flush
 
-* Extract the content of the zip file on your hard disk.
-
-* In your Magento root directory, find the folder app/code. If code is missing, create it.
-
-* Now, inside code, create the directories Isendu.
-
-* Inside Isendu, copy the content of the zip file: you should see ConnectorModule, README.md, ...
-
-(img)
-
-Then, launch this command (on mac and linux):
-
-``` 
-php bin/magento module:enable Isendu_ConnectorModule
-
-php bin/magento setup:upgrade
-
-php bin/magento cache:flush
-
-```
-
-### Configuration ###
-
-* Once logged in in Magento, select Stores > Configuration > Isendu > Connector. 
-
-* Set Enable Isendu Module to "Yes"
-
-(img)
-
-* Refresh cache
-
-(img)
-
-
+#Disable Extension:
+- php bin/magento module:disable Isendu_ConnectorModule
+- php bin/magento setup:upgrade
+- php bin/magento setup:di:compile
+- php bin/magento cache:flush
